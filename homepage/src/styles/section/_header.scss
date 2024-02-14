@@ -1,0 +1,32 @@
+#header{
+    width:100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    .header__inner{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        height: 200px;
+        .header__logo{
+            img{
+                width: 150px;
+            }
+        }
+        .Nav{
+            color: white;
+            // margin: 30px;
+            // margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+            span{
+                margin: 50px
+            }
+            
+        }
+        
+        
+    }
+}
