@@ -1,0 +1,21 @@
+#about{
+    .about__inner{
+        display:flex ;
+        justify-content: center;
+        .circle{
+            margin: 30px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: rgb(11, 37, 60);
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                font-size:80px;
+            }
+            
+        }
+    }
+}
