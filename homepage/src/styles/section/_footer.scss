@@ -1,0 +1,18 @@
+#footer{
+    background-color: rgb(11, 37, 60);
+    .footer__inner{
+        height: 100%;
+        .option{
+            display: flex;
+            justify-content: center;
+            // margin: 30px;
+            span{
+                margin: 20px;
+            }
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
