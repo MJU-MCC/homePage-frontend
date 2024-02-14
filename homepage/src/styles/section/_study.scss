@@ -1,0 +1,13 @@
+#study{
+    margin: 200px;
+    .study__inner{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 300px;
+        }
+        h1,h3{
+            margin: 30px;
+        }
+    }
+}
