@@ -1,6 +1,7 @@
 #header{
     width:100%;
     position: fixed;
+    // position: absolute;
     left: 0;
     top: 0;
     z-index: 10000;
@@ -8,10 +9,10 @@
         background-color: black;
         display: flex;
         justify-content: center;
-        height: 200px;
+        height: 130px;
         .header__logo{
             img{
-                width: 150px;
+                width: 140px;
             }
         }
         .Nav{
@@ -24,7 +25,9 @@
             span{
                 margin: 50px
             }
-            
+            button{
+                margin-top: 40px;
+            }
         }
         
         
