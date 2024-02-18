@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/section/_footer.scss'
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Footer = () => {
+    const [isLogin, setIsLogin]=useState(false)
+    const navigate=useNavigate();
+
+    useEffect(()=>{
+        const token=localStorage.getItem("accessToken")
+        if(token){
+            setIsLogin(true)
+        }else{
+            setIsLogin(false)
+        }
+    },[])
+
+    const adminClick=()=>{
+        if(isLogin){
+            //운영진 확인 api 
+        }else{
+            navigate('/login')
+        }
+    }
+
     return (
-        <section id='footer'>
+        <footer id='footer' role='footer'>
             <div className='footer__inner'>
             <div className='option'>
                     <span>Notion</span>
                     <span>Instagram</span>
                     <span>Github</span>
-                    <span>Admin</span>
+                    <Link to='/admin'>
+                        <span>Admin</span>
+                    </Link>
                 </div>
                 
                 <div className='text'>
@@ -19,7 +43,7 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-        </section>
+        </footer>
     );
 };
 
