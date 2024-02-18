@@ -29,13 +29,13 @@ export const projectData=[
     {
         image:a,
     },
-    {
-        image:b,
-    },
-    {
-        image:c,
-    },
-    {
-        image:d,
-    },
+    // {
+    //     image:b,
+    // },
+    // {
+    //     image:c,
+    // },
+    // {
+    //     image:d,
+    // },
 ]
