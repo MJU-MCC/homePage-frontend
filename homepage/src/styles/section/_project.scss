@@ -1,26 +1,28 @@
 @keyframes display{
     0% {transform:translateX(0%);}
-    // 50% {transform:translateX(100%);}
     100%{transform: translateX(-100%);}
 }
 #project{
     h1{
         text-align: center;
     }
+    background-color: black;
+    height: 100vh;
     .project__inner{
         display: flex;
         justify-content: center;
+        margin-bottom: 100px;
         .project_list{
             display: flex;
             overflow-x: auto;
-            padding: 0;
+            padding: 10px;
             .project{
                 width: 300px;
                 height:200px;
                 position: relative;
                 margin-top: 20px;
                 margin-bottom: 30px;
-                animation:display 5s linear infinite ;
+                animation:display 10s linear infinite  ;
                 // animation:display-revers 1s linear infinite;
                 // animation-iteration-count: infinite;
                 .img{
