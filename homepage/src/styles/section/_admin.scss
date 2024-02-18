@@ -1,0 +1,11 @@
+#adminpage{
+    background-color: black;
+    height: 100vh;
+    .admin__inner{
+        display: flex;
+        justify-content: center;
+        input{
+            margin-top: 500px;
+        }
+    }
+}
