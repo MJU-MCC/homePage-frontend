@@ -12,8 +12,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HomeView/>}></Route>
         <Route path='/login' element={<LoginView/>}></Route>
-        {/* <Route path='/admin' element={<AdminView/>}></Route>
-        <Route path='/error' element={<_404View/>}></Route> */}
+        <Route path='/admin' element={<AdminView/>}></Route>
+        {/* <Route path='/error' element={<_404View/>}></Route> */}
       </Routes>
     </BrowserRouter>
   );
