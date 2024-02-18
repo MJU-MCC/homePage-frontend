@@ -1,0 +1,24 @@
+#login{
+    background-color: black;
+    height: 100vh;
+    .login__inner{
+        display: flex;
+        justify-content: center;
+        .login-image{
+            img{
+                margin-top: 180px;
+                width: 400px;
+                // margin-left: 200px;
+            }
+            input,button{
+                display:flex;
+                justify-content: center;
+                margin-left: 130px;
+            }
+            button{
+                margin-left: 190px;
+            }
+
+        }
+    }
+}
