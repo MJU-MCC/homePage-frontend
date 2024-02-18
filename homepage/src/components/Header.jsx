@@ -1,7 +1,9 @@
 import React from 'react';
 import Logo from '../assets/images/Logo_img.png'
 import '../styles/section/_header.scss'
+import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/scss/bootstrap.scss';
 
 const Header = () => {
     return (
@@ -16,8 +18,10 @@ const Header = () => {
                 <span>Study</span>
                 <span>Project</span>
                 <span>Vote</span>
-                <span>My Page</span>
-                <button type="button" class="btn btn-outline-primary" >Login</button>
+                <span>MyPage</span>
+                <Link to='/login'>
+                    <button type="button" className="btn btn-outline-primary">Login</button>
+                </Link>
                 </div>
             </div>
 
