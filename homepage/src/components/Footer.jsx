@@ -12,14 +12,14 @@ const Footer = () => {
             try{
                 const info=await axios.get("http://localhost:8080/member/get/myinfo",{
                     headers:{
-                        Authorization:token.accessToken,
+                        Authorization:token,
                     }
                 })
                 if(info.status===200){
-                    console.log(info.data)
-                    if(info.data.user===false){
+                    console.log(info.data.admin)
+                    if(info.data.admin===true){
                         navigate('/admin')
-                    }else if(info.data.user===true){
+                    }else{
                         alert("관리자만 접속할 수 있습니다.")
                         navigate('/')
                     }
