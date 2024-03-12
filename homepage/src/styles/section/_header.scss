@@ -9,10 +9,8 @@
         display: flex;
         justify-content: center;
         height: 170px;
-        .header__logo{
-            img{
-                width: 160px;
-            }
+        img{
+            width: 160px;
         }
         .Nav{
             padding: 18px;
@@ -40,10 +38,8 @@
     #header{
         .header__inner{
             height: 150px;
-            .header__logo{
-                img{
-                    width: 120px;
-                }
+            img{
+                width: 120px;
             }
             .Nav{
                 span{
@@ -63,10 +59,9 @@
     #header{
         .header__inner{
             height: 130px;
-            .header__logo{
-                img{
-                    width: 100px;
-                }
+            
+            img{
+                width: 100px;
             }
             .Nav{
                 span{
