@@ -31,6 +31,7 @@ const LoginNav = () => {
                 console.log(res.data)
                 localStorage.setItem("accessToken",res.accessToken)
                 localStorage.setItem("refreshToken",res.refreshToken)
+                navigate('/')
             }
         }catch(err){
             if(err.res && err.res.status ===404){
