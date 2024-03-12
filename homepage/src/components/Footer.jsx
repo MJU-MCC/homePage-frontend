@@ -28,9 +28,9 @@ const Footer = () => {
         <footer id='footer' role='footer'>
             <div className='footer__inner'>
             <div className='option'>
-                    <span>Notion</span>
-                    <span>Instagram</span>
-                    <span>Github</span>
+                    <span><a href='https://www.notion.so/mjucodingclub/45-95d6016f30cf4449b35ee2f397ecc8ca?pvs=4'>Notion</a></span>
+                    <span><a href='https://www.instagram.com/mjumcc/'>Instagram</a></span>
+                    <span><a href='https://github.com/MJU-MCC'>Github</a></span>
                     <Link to='/admin'>
                         <span>Admin</span>
                     </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
                 
                 <div className='text'>
                     <p>
-                        MCC Myungji Computer Club (명지대학교 컴퓨터 동아리)<br/>
+                        MCC Myongji Computer Club (명지대학교 컴퓨터 동아리)<br/>
                         Copyright©2024.MCC. All rights reserved.
                     </p>
                 </div>

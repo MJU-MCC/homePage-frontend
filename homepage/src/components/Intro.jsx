@@ -7,7 +7,7 @@ const Intro = () => {
         <section id='intro'>
             <div className='intro__inner'>
                 <h1>오랜 역사와 전통을 자랑하는<br/>
-                    Myungji Computer Club<br/>
+                    Myongji Computer Club<br/>
                     M.C.C 와 함께 하실래요?
                 </h1> <br/><br/>
                 <h3>

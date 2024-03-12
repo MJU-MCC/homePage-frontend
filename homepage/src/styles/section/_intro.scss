@@ -2,11 +2,40 @@
     .intro__inner{
         text-align: center;
         .computer_img{
+            display: flex;
+            justify-content: center;
+            padding: 90px;
             img{
-                margin: 200px;
-                width: 400px;
+                width: 450px;
             }
         }
     }
 
+}
+
+@media screen and (min-width:1024px) {
+}
+@media screen and (max-width:1023px) {
+    #intro{
+        .intro__inner{
+            .computer_img{
+                padding: 70px;
+                img{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    #intro{
+        .intro__inner{
+            .computer_img{
+                padding: 60px;
+                img{
+                    width: 350px;
+                }
+            }
+        }
+    }
 }

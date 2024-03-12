@@ -1,13 +1,53 @@
 #study{
-    margin: 200px;
+    padding: 40px;
     .study__inner{
         display: flex;
         justify-content: center;
         img{
             width: 300px;
         }
-        h1,h3{
+        h1{
             margin: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+}
+@media screen and (max-width:1023px) {
+    #study{
+        .study__inner{
+            img{
+                width: 250px;
+                height: 200px;
+            }
+            p{
+                font-size: 15px;
+                font-weight: 900;
+            }
+            svg{
+                width: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    #study{
+        .study__inner{
+            img{
+                width: 230px;
+                height: 180px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 900;
+            }
+            svg{
+                width: 35px;
+            }
         }
     }
 }
