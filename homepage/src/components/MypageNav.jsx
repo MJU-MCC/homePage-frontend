@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import '../styles/section/_mypage.scss'
+import 'bootstrap/scss/bootstrap.scss';
 
 const MypageNav = () => {
-    const [id,setId]=useState()
+    const [id,setId]=useState('')
     const navigate=useNavigate()
 
     useEffect(()=>{
@@ -12,7 +14,7 @@ const MypageNav = () => {
             try{
                 axios.get('http://localhost:8080/member/get/myinfo',{
                     headers:{
-                        Authorization:token.accessToken,
+                        Authorization:token,
                     },
                 })
                 .then(res=>{
@@ -35,6 +37,9 @@ const MypageNav = () => {
             <div className='mypage__inner'>
                 <div>
                     <p>{id}님 안녕하세요!</p>
+                    <Link to='/change'>
+                        <button type="button" class="btn btn-outline-light">비밀번호 변경</button>
+                    </Link>
                 </div>
             </div>
         </div>
