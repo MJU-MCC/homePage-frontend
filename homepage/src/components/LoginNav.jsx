@@ -29,16 +29,10 @@ const LoginNav = () => {
             const res= await axios.post("http://localhost:8080/member/login",body)
             if(res.status===200){
                 console.log(res.data)
-<<<<<<< Updated upstream
-                localStorage.setItem("accessToken",res.accessToken)
-                localStorage.setItem("refreshToken",res.refreshToken)
-                navigate('/')
-=======
                 localStorage.setItem("accessToken",res.data.accessToken)
                 localStorage.setItem("refreshToken",res.data.refreshToken)
->>>>>>> Stashed changes
+                navigate('/')
             }
-            navigate('/')
         }catch(err){
             if(err.res && err.res.status ===404){
                 navigate('/error')
