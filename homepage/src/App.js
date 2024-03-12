@@ -5,6 +5,7 @@ import LoginView from './views/LoginView'
 import AdminView from './views/AdminView';
 import _404View from './views/_404View';
 import MypageView from './views/MypageView';
+import PwdChange from './components/PwdChange'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/admin' element={<AdminView/>}></Route>
         <Route path='/error' element={<_404View/>}></Route>
         <Route path='/mypage' element={<MypageView/>}></Route>
+        <Route path='/change' element={<PwdChange/>}></Route>
       </Routes>
     </BrowserRouter>
   );
