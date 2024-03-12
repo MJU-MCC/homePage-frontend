@@ -1,0 +1,41 @@
+#mypage{
+    background-color: #000000;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .mypage__inner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 300px;
+        p{
+            font-size: 50px;
+            color: rgb(226, 226, 226);
+            white-space: nowrap;
+        }
+        button{
+            
+        }
+    }
+}
+@media screen and (min-width:1024px) {
+}
+@media screen and (max-width:1023px) {
+    #mypage{
+        .mypage__inner{
+            p{
+                font-size: 35px;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    #mypage{
+        .mypage__inner{
+            p{
+                font-size: 26px;
+            }
+        }
+    }
+
+}
