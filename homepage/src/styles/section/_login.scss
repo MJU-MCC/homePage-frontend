@@ -1,14 +1,13 @@
 #login{
     background-color: black;
-    height: 100vh;
+    height: 120vh;
     .login__inner{
+        padding: 170px;
         display: flex;
         justify-content: center;
         .login-image{
             img{
-                margin-top: 180px;
-                width: 400px;
-                // margin-left: 200px;
+                width: 410px;
             }
             input,button{
                 display:flex;
@@ -19,6 +18,40 @@
                 margin-left: 190px;
             }
 
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+}
+@media screen and (max-width:1023px) {
+    #login{
+        .login__inner{
+            height: 100vh;
+            .login-image{
+                img{
+                    width: 320px;
+                }
+                input{
+                    margin-left: 80px;
+                }
+                button{
+                    margin-left: 140px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    #login{
+        height: 200vh;
+        .login__inner{
+            height: 100vh;
+            .login-image{
+                img{
+                    width: 300px;
+                }
+            }
         }
     }
 }
