@@ -29,8 +29,9 @@ const LoginNav = () => {
             const res= await axios.post("http://localhost:8080/member/login",body)
             if(res.status===200){
                 console.log(res.data)
-                localStorage.setItem("accessToken",res.accessToken)
-                localStorage.setItem("refreshToken",res.refreshToken)
+                localStorage.setItem("accessToken",res.data.accessToken)
+                localStorage.setItem("refreshToken",res.data.refreshToken)
+                navigate('/')
             }
         }catch(err){
             if(err.res && err.res.status ===404){
