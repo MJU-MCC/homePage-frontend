@@ -10,6 +10,14 @@ const PwdChange = () => {
     const [checkNextPwd, setCheckNextPwd]=useState('')
     const navigate=useNavigate();
     
+    const logoutHandler=()=>{
+        localStorage.removeItem("accessToken")
+        navigate('/login')
+        console.log(localStorage.getItem())
+        console.log("logout")
+    }
+
+
 
     const onPwdCheck=async(e)=>{
         e.preventDefault()
@@ -25,14 +33,10 @@ const PwdChange = () => {
                     },
                 })
                 if(res.status===200){
-                    if(res.data.currentPassword===pwd){ 
-                        if(nextPwd===checkNextPwd){
-                                alert("비밀번호가 변경되었습니다.")
-                                navigate('/login')
-                        }else{
-                            alert("변경 비밀번호가 일치하지 않습니다.")
-                        }
-                    }
+                    
+                        alert("비밀번호가 변경되었습니다.")
+                        logoutHandler()
+                    
                 }
             }
         }catch(error){
@@ -48,6 +52,14 @@ const PwdChange = () => {
 
     const handleSubmit=(e)=>{
         e.preventDefault()
+        if(!pwd || !nextPwd || !checkNextPwd){
+            alert("모든 필드를 입력하세요")
+            
+        }
+
+        if(nextPwd!==checkNextPwd){
+            alert("변경할 비밀번호가 일치하지 않습니다.")
+        }
         onPwdCheck(e)
     }
     return (
