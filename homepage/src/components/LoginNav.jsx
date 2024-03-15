@@ -51,7 +51,7 @@ const LoginNav = () => {
                     <br/><br/><br/>
                     <form onSubmit={onSubmit}>
                         <input type='text' placeholder='ID' value={id} onChange={onIdHandler}></input><br/>
-                        <input type='text' placeholder='Password' value={pwd} onChange={onPwdHandler}></input><br/><br/>
+                        <input type='password' placeholder='Password' value={pwd} onChange={onPwdHandler}></input><br/><br/>
                         <button type='submit' className="btn btn-light">Login</button>
                     </form>
                 </div>
